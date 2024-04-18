@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@400;500;600;700&family=Cairo:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,200;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Hanken+Grotesk:ital,wght@0,300;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:wght@500;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+body {
+    font-size: 16px;
+    display: grid;
+    place-content: center;
+    box-sizing: border-box;
+    width: 80%;
+}
+.background-image img{
+    object-fit: cover; /* Resmi div'in tamamına sığdırma */
+    width: 100%; /* Resmin genişliği */
+    height: 100%; /* Resmin yüksekliği */
+}
+.intgore {
+    background-image:url("/images/bg-pattern-desktop.svg");
+    background-size: cover; /* Resmi div'in tamamına sığdırma */
+    background-repeat: no-repeat; /* Resmi tekrar etmeme */
+    background-position: left center; /* Resmi sola yanaştırma */
+    width: auto; /* Genişlik */
+    height: auto; /* Yükseklik */
+    background-size: cover;
+    
+
+}  
+/* 
+.intgore{
+
+}
+.intgore .info .Information .foter-img{
+
+    margin-right: 60%; 
+    text-align: center; 
+    margin-top: 10%;
+}
+.intgore .info .Information .Articl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 60%; 
+    text-align: center; 
+} */
