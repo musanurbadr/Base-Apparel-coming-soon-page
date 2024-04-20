@@ -15,25 +15,27 @@
 </head>
 <body>
   <div class="intgore">
-    <div class="info">
-      <div class="Information">
-        <div class="foter-img">
+    <div class="Information">
+      <div class="foter-img">
           <img src="/images/logo.svg" alt="">
-        </div>
-        <div class="Articl">
-          <h1>We're coming soon</h1>
-          <p>Hello fellow shoppers! We're currently building our new fashion store. 
-            Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        </div>
-        <form id="inputForm">
-          <label for="userInput"></label>
-          <input type="text" id="userInput" name="userInput" placeholder="Email Address...">
-          <button type="button" id="btn" onclick="showInput()" ><img src="./images/icon-arrow.svg" alt="btnimg"></button>
-        </form>
-        <div class="img-body">
-          <!-- <img src="./images/hero-desktop.jpg" alt=""> -->
-        </div>
       </div>
+      <div class="Articl">
+          <h1><span>We're </span>coming soon</h1>
+      </div>
+      <div class="text-1">
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      </div>
+      <form id="inputForm" novalidate>
+          <label for="userInput"></label>
+          <input type="text" id="userInput" name="userInput" placeholder="Email Address..." >
+          <img src="./images/icon-error.svg" alt="" class="img-input">
+          <button type="button" id="btn" onclick="showInput()" ><img src="./images/icon-arrow.svg" alt="btnimg"></button>
+      </form>
+    </div>
+    <div class="img-body">
+      <img src="./images/hero-desktop.jpg" alt="" class="hero-desktop">
+      <img src="./images/hero-mobile.jpg" alt="" class="hero-mobile">
     </div>
   </div>
 </body>

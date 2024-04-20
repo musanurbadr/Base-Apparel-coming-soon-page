@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@400;500;600;700&family=Cairo:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,200;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Hanken+Grotesk:ital,wght@0,300;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:wght@500;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 *{
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
 }
+
 :root{
     --Desaturated-Red: hsl(0, 36%, 70%);
     --Soft-Red: hsl(0, 93%, 68%);
@@ -15,39 +18,86 @@ body {
     display: grid;
     place-content: center;
     box-sizing: border-box;
-    width: 80%;
+    width:auto;
 }
-.background-image img{
-    object-fit: cover; /* Resmi div'in tamamına sığdırma */
-    width: 100%; /* Resmin genişliği */
-    height: 100%; /* Resmin yüksekliği */
-}
-.intgore {
-    background-image:url("/images/bg-pattern-desktop.svg");
-    background-size: cover; /* Resmi div'in tamamına sığdırma */
-    background-repeat: no-repeat; /* Resmi tekrar etmeme */
-    background-position: left center; /* Resmi sola yanaştırma */
-    width: auto; /* Genişlik */
-    height: auto; /* Yükseklik */
-    background-size: cover;
-    
-
-}  
-/* 
 .intgore{
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    grid-template-columns: 60% 40%;
+}
+.img-body{
+    display:flex;
+}
+.hero-desktop{
+    width: 100%;
+    height: 100%;
+}
+.hero-mobile{
+    display: none;
+    width: 100%;
+}
+.Information{
+    background: url("/images/bg-pattern-desktop.svg");
+    background-size: cover;
+    padding: 5em 2em 0 10em;
+}
+.foter-img{
+    display: block;
+}
+
+.Articl {
+    margin: 2.5em 0 0 0;
+    font-size:3rem;
+    font-weight: 300 ;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.9em;
+}
+.Articl h1{
+    font-weight: 600;
+    color: var(--Dark-Grayish-Red);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5em;
+    width: 50%;
+    line-height: 1.2em;
 
 }
-.intgore .info .Information .foter-img{
-
-    margin-right: 60%; 
-    text-align: center; 
-    margin-top: 10%;
+.Articl h1 span{
+    font-weight: 100;
+    color: var(--Desaturated-Red);
 }
-.intgore .info .Information .Articl {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-right: 60%; 
-    text-align: center; 
-} */
+.text-1{
+    color: var(--Soft-Red);
+    width: 65%;
+    min-width: 400px;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+form {
+    width: 100%;
+    position: relative;
+}
+#userInput{
+    width: 65%;
+    min-width: 400px;
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 50px;
+    background: transparent;
+    height: 50px;
+    padding: 20px;
+}
+.img-input{
+    display: none;
+}
+button{
+    position: absolute;
+    padding: 13px 35px 13px 35px;
+    border-radius: 73px;
+    right: 209px;
+    background-color: var(--Desaturated-Red);
+    border: none;
+}
